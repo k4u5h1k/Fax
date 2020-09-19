@@ -11,23 +11,23 @@ just_sent = None
 
 @client.event
 async def on_ready():
-    print(f'Fax has connected to Discord!')
+    print(f"Fax has connected to Discord!")
 
 @client.event
 async def on_message(message):
     global just_sent
     facts = [
-        'Mansik is forever',
-        'Tarun Pakistani',
-        'Tushar sucks at Valorant',
-        'Raghu is single',
-        "Mansi isn\'t as innocent as she acts",
+        "Mansik is forever",
+        "Tarun Pakistani",
+        "Tushar sucks at Valorant",
+        "Raghu is single",
+        "Mansi isn't as innocent as she acts",
         "We all should've taken Arts",
         "The only thing I'm still unsure about is Sameer's relationship status",
         "We need Shayri Sangram again"
     ]
 
-    if message.content.lower() == 'spit fax':
+    if message.content.lower() == "spit fax":
         new_list = facts.copy()
 
         if just_sent is not None:
